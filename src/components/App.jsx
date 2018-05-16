@@ -31,11 +31,19 @@ class App extends React.Component {
 
   render() {
     return (
-      <Fragment>
-        {Object.keys(this.state.data).map(uuid => (
-          <Fact key={uuid} data={this.state.data[uuid]} />
-        ))}
-      </Fragment>
+      <div className="app container">
+        <Fragment>
+          {Object.keys(this.state.data).map(uuid => (
+            <Fact key={uuid} data={this.state.data[uuid]} />
+          ))}
+          <button
+            className="btn btn-outline-secondary btn-random-fact float-right"
+            onClick={this.getRandomFact}
+          >
+            <i className="fa fa-refresh" /> Random Fact
+          </button>
+        </Fragment>
+      </div>
     );
   }
 }

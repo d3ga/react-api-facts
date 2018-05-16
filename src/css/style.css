@@ -6283,6 +6283,7 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 
 body {
+  margin-top: 3rem;
   background: #191919;
   color: yellow; }
 
@@ -6292,4 +6293,4 @@ body {
   padding: 125px 100px;
   position: relative;
   justify-content: center;
-  min-height: 100vh; }
+  min-height: 50vh; }
