@@ -1,0 +1,15 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+body {
+  background: #191919;
+  color: yellow;
+}
+
+.fact-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 125px 100px;
+  position: relative;
+  justify-content: center;
+  min-height: 100vh;
+}
